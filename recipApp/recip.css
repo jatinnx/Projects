@@ -1,0 +1,77 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    font-family:'Times New Roman', Times, serif; /* More modern and web-safe font */
+    box-sizing: border-box;
+    color: aliceblue;
+}
+
+body {
+    background-color: blueviolet; /* Consistent use of background-color */
+    min-height: 100vh; /* Ensure content fills the viewport */
+}
+
+header#topbr {
+    background-color: #000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* Align content vertically within the header */
+    padding: 20px 30px;
+    width: 100%; /* Make the header fill the width */
+}
+
+h1 {
+    color: aliceblue; /* Inherit from global color */
+    margin: 0; /* Remove default margin */
+    font-size: 3em; /* Adjust heading size */
+}
+
+.search {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    width: auto; /* Remove fixed width */
+}
+
+.search input {
+    border: 1px solid #ddd; /* Add thin border */
+    outline: 0;
+    background-color: #ebfffc;
+    color: #555;
+    padding: 10px 25px;
+    height: 40px; /* Adjust input height */
+    border-radius: 30px; /* Consistent border-radius */
+    font-size: 16px; /* Adjust font size for input */
+}
+
+.search button {
+    background-color: rgb(255, 0, 0); /* Match header background */
+    color: aliceblue; /* Match global color */
+    border: none; /* Remove default border */
+    padding: 10px 20px;
+    border-radius: 5px; /* Consistent border-radius */
+    font-size: 16px; /* Adjust button font size */
+    cursor: pointer; /* Indicate clickable element */
+}
+
+.search button:hover {
+    background-color: rgb(251, 107, 107); /* White background on hover */
+    transition: background-color 0.3s ease-in-out; /* Smooth transition */
+}
+/* main section */
+
+.recipe-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.crd-dr{
+    background: #555;
+}
+
+
