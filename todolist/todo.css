@@ -1,0 +1,64 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+body {
+    background-color: #282b2d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    width: 400px;
+    text-align: center;
+}
+
+.card h2 {
+    color: #17a2b8;
+    margin-bottom: 20px;
+}
+
+form {
+    /* display: flex; */
+    flex-direction: column;
+    align-items: center;
+}
+
+.searchbox {
+    width: 75%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.btn {
+    padding: 10px 20px;
+    margin-bottom: 4px;
+    font-size: 16px;
+    border: 1px solid #17a2b8;
+    border-radius: 5px;
+    background-color: transparent;
+    color: #17a2b8;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.btn:hover {
+    background-color: #17a2b8;
+    color: rgb(0, 0, 0);
+}
+
+.checkLable, .checkInput{
+    font-size: 1.3em; 
+}
