@@ -1,0 +1,49 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+    background-color: #282b2d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.calcard{
+    text-align: center;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    width: 400px;
+}
+
+.divBtn{
+    display: inline;
+}
+
+.cal-input {
+    width: 75%;
+    padding: 10px 0 10px 10px ;
+    border: 1px solid #ced4da;
+    font-size: 2em;
+    margin-left: auto;
+    margin-right: auto;   
+    margin-bottom: 15px; 
+    background-color: #fff;
+    text-align: end;
+}
+
+
+
+.btn{
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
