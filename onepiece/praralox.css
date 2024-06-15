@@ -1,0 +1,104 @@
+#wrapper{
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+    perspective: 10px;
+}
+.container{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    transform-style: preserve-3d;
+    z-index: -1;
+
+}
+.bgi{
+    transform: translateZ(-40px) scale(5.5);
+}
+.fgi{
+    transform: translateZ(-10px) scale(2);
+}
+.bgi, .fgi {
+    position:absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    object-fit: cover;
+}
+.hed{
+    position: absolute;
+    top: 5rem;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 10rem;
+    color: aliceblue;
+    text-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+section{background-color: rgb(35, 35, 35);
+    color: aliceblue;
+    padding: 5rem 0;
+
+}
+.bg{
+    height: 500px;
+    width: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+.bg1{
+    background-image: url(f.png);
+}
+.bg2{
+    background-image: url(luffy.jpg);
+}
+.bg3{
+    background-image: url(zoro.jpg);
+}
+.bg4{
+    background-image: url(nami.jpg);
+}
+.bg5{
+    background-image: url(ussop.jpg);
+}
+.bg6{
+    background-image: url(sanji.jpg);
+}
+.bg7{
+    background-image: url(copper.jpg);
+}
+.bg8{
+    background-image: url(robin.jpg);
+}
+.bg9{
+    background-image: url(franky.jpg);
+}
+.bg10{
+    background-image: url(brook.jpeg);
+}
+.bg11{
+    background-image: url(jembe.jpeg);
+}
+
+.text1{
+    height: 300px;
+    font-size: 20px;
+    padding: 30px;
+
+}
+
+.decs{
+    position: relative;
+    /* display: flex; */
+    display: inline-block;
+    background-color: #fff;
+    color: black;
+    padding: 15px;
+    font-size: 40px;
+    top: 25%;
+    left: 10%;
+    
+
+}
