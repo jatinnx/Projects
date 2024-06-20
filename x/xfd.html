@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        @import url("https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playwrite+ES:wght@100..400&display=swap");
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "PT Sans";
+            font-style: normal;
+            color: rgb(219, 238, 255);
+        }
+
+        body {
+            background-color: rgb(0, 0, 0);
+        }
+
+        .x {
+            height: 400px;
+        }
+
+        .wapper {
+            display: flex;
+            height: 93vh;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+        }
+
+        .hero-div1 {
+            height: 100vh;
+            border: 2px solid black;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 60%;
+        }
+
+        .hero-div2 {
+            width: 45%;
+        }
+
+        .hero-link {
+            width: 340px;
+        }
+
+        .separator {
+            display: flex;
+            align-items: center;
+        }
+
+        .separator hr {
+            flex-grow: 1;
+            border: none;
+            border-top: 1px solid rgb(255, 255, 255);
+            margin: 0 10px;
+        }
+
+        .separator p {
+            margin: 0;
+            padding: 0 10px;
+        }
+
+        .hero-main h1 {
+            transform: scaleX(1.4);
+            font-size: 60px;
+            font-weight: 900;
+            padding-left: 70px;
+            padding-top: 150px;
+            padding-bottom: 40px;
+            width: 500px;
+        }
+
+        .hero-join {
+            border: 2px solid black;
+            width: 400px;
+            height: 500px;
+        }
+
+        .hero-join h2 {
+            font-size: 35px;
+            margin-bottom: 30px;
+        }
+
+        .hero-join a {
+            color: rgb(0, 0, 0);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-decoration: none;
+            background-color: #fff;
+            width: 300px;
+            border: 2px solid black;
+            border-radius: 50px;
+            margin: 10px 0;
+            padding: 12px;
+            height: 35px;
+        }
+
+        a h4 {
+            text-decoration: none;
+            color: black;
+        }
+
+        .hero-join a img {
+            height: 20px;
+            margin-right: 10px;
+        }
+
+        .hero-link {
+            border: 2px solid black;
+            display: flex;
+            display: flex;
+            flex-basis: auto;
+            flex-direction: column;
+            flex-shrink: 0;
+            width: 310px;
+        }
+
+        .mimi-trems {
+            font-size: smaller;
+            color: grey;
+        }
+
+        span {
+            color: rgb(29, 155, 240);
+        }
+
+        .foot {
+            text-align: center;
+            margin: 10px 0;
+        }
+
+        .foot a {
+            margin: 0 10px;
+            text-decoration: none;
+            color: gray;
+            font-size: 14px;
+        }
+
+        .signup {
+            margin-top: 40px;
+        }
+
+        a h3 {
+            color: rgb(29, 155, 240);
+        }
+
+        .signup a {
+            background-color: rgba(255, 0, 0, 0);
+            border: 2px solid rgb(29, 155, 240);
+            transition: background-color 0.5s ease;
+        }
+
+        .signup a:hover {
+            background-color: rgba(24, 130, 200, 0.3);
+        }
+
+        .sign-box {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            translate: -50% -50%;
+            width: 550px;
+            height: 650px;
+            scale: 0;
+            background: #000000;
+            color: white;
+            z-index: 1;
+            padding: 20px 25px;
+            border-radius: 20px;
+            padding: 20px;
+        }
+
+        .sign-box,
+        .hero-join2 {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .sign-box img {
+            height: 40px;
+        }
+
+        div.x2 {
+            width: 100%;
+            display: grid;
+            place-items: center;
+        }
+
+        .click-con {
+            border: 2px solid grey;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 20px 0;
+        }
+
+        .input-container {
+            position: relative;
+            margin-top: 20px;
+        }
+
+        .input-container input {
+            width: 300px;
+            background-color: rgba(0, 0, 0, 0);
+            border-radius: 5px;
+            border: 0px solid grey;
+            padding: 10px;
+            font-size: 16px;
+        }
+
+        .input-container input:focus {
+            outline: none;
+            border: none;
+            background-color: rgba(245, 222, 179, 0);
+        }
+
+        .input-container label {
+            position: absolute;
+            left: 10px;
+            font-size: 20px;
+            color: gray;
+            transition: all 0.3s;
+            pointer-events: none;
+        }
+
+        .input-container input:focus + label,
+        .input-container input:not(:placeholder-shown) + label {
+            top: -10px;
+            left: 10px;
+            font-size: 13px;
+            color: rgb(29, 155, 240);
+        }
+
+        .overlay {
+            position: fixed;
+            background-color: rgba(219, 238, 255, 0.2);
+            top: 0;
+            scale: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            pointer-events: none;
+        }
+
+        .cross {
+            text-align: center;
+            height: 32px;
+            width: 32px;
+            font-size: 25px;
+            position: absolute;
+            left: 30px;
+            top: 30px;
+            border-radius: 50%;
+            transition: 0.3s ease-in-out;
+        }
+
+        .cross:hover {
+            background-color: rgba(219, 238, 255, 0.1);
+        }
+
+        .active {
+            scale: 1;
+        }
+
+        @media screen and (max-width: 1000px) {
+            .wapper {
+                display: grid;
+                place-items: center;
+                row-gap: 0;
+                height: 93vh;
+                overflow-y: scroll;
+            }
+
+            .x {
+                height: 50px;
+            }
+
+            .hero-div1 {
+                padding: 20px 0px 0px 30px;
+                height: 80px;
+                border: 2px solid black;
+                display: block;
+                align-items: center;
+                justify-content: center;
+            }
+
+            .hero-main h1 {
+                border: 2px solid black;
+                transform: scaleX(1);
+                font-size: 60px;
+                font-weight: 900;
+                padding-top: 10px;
+                padding-left: 0;
+                padding-bottom: 40px;
+            }
+        }
+
+        @media screen and (max-width: 500px) {
+            .wapper {
+                display: grid;
+                place-items: none;
+                padding: 30px;
+                height: 93vh;
+                overflow-y: scroll;
+            }
+
+            .hero-main h1 {
+                border: 2px solid black;
+                transform: scaleX(1);
+                font-size: 40px;
+                font-weight: 900;
+                padding-top: 0px;
+                padding-left: 0;
+                padding-bottom: 0px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wapper">
+        <div class="hero-div1 hero-div">
+            <img class='x' src="x.jpg" alt="" />
+        </div>
+        <div class="hero-div2 ">
+            <div class="hero-main">
+                <h1 class="headline">Happening now</h1>
+                <div class="hero-join">
+                    <h2 class="headline-below">Join Today.</h2>
+                    <div class="hero-link">
+                        <a href="" class="link">
+                            <img src="google.png" alt="">
+                            <h4>Sing up with Google</h4>
+                        </a>
+                        <a href="" class="link">
+                            <img src="apple.png" alt="">
+                            <h4>Sing up with Apple</h4>
+                        </a>
+                        <div class="separator">
+                            <hr />
+                            <p>or</p>
+                            <hr />
+                        </div>
+                        <a href="" class="link">
+                            <h4>Create Account</h4>
+                        </a>
+                        <p class='mimi-trems'>By signing up, you agree to the <span>Terms of Service</span> and <span>Privacy Policy</span>, including <span>Cookie Use</span>.</p>
+                        <div class="signup">
+                            <h3>Already Have An Account?</h3>
+                            <a href="">
+                                <h3>Sing in</h3>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="foot">
+        <a href="">About</a>
+        <a href="">Download X app</a>
+        <a href="">Help Crenter</a>
+        <a href="">Terms of Service</a>
+        <a href="">Privacy Policy</a>
+        <a href="">Cookie Policy</a>
+        <a href="">Accessibility</a>
+        <a href="">Ads info </a>
+        <a href="">Blog</a>
+        <a href="">Careers</a>
+        <a href="">Brand Resources</a>
+        <a href="">Advertising</a>
+        <a href="">Marketing</a>
+        <a href=""> X for Business</a>
+        <a href=""> Developers</a>
+        <a href="">Directory</a>
+        <a href="">Settings</a>
+        <a href="">© 2024 X Corp.</a>
+    </footer>
+
+    <div class="sign-box">
+        <div id="wait">
+            <div class="cross">
+                <i class="fa-solid fa-xmark "></i>
+            </div>
+            <div class="x2">
+                <img src="x.jpg" alt="">
+            </div>
+            <div class="input-D">
+                <div class="hero-join hero-join2" id="wait">
+                    <h2 class="headline-below">Sing in to X</h2>
+                    <a href="" class="link">
+                        <img src="google.png" alt="">
+                        <h4>Sign up with Google</h4>
+                    </a>
+                    <a href="" class="link">
+                        <img src="apple.png" alt="">
+                        <h4>Sign up with Apple</h4>
+                    </a>
+                    <div class="separator">
+                        <hr />
+                        <p>or</p>
+                        <hr />
+                    </div>
+                    <div class="click-con">
+                        <div class="input-container">
+                            <input type="text" id="username" placeholder=" " required>
+                            <label for="username">Enter Username..</label>
+                        </div>
+                    </div>
+                    <a href="" class="link">
+                        <h4>Next</h4>
+                    </a>
+                    <a href="" class="link">
+                        <h4>Forget pasword?</h4>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="overlay" onclick="closeModal()"></div>
+    <div class="overlay overlay2">
+        <h1>nhi bana</h1>
+        <button>back</button>
+    </div>
+
+    <script>
+        let links = document.querySelectorAll('.link');
+
+        links.forEach(element => {
+            let originalText = element.innerHTML;
+
+            element.addEventListener('mouseover', function (event) {
+                event.preventDefault();
+                element.innerHTML = 'Click on Sign in';
+            });
+
+            element.addEventListener('mouseout', function (event) {
+                event.preventDefault();
+                element.innerHTML = originalText;
+            });
+        });
+
+        const signup = document.querySelector('.signup');
+        const signbox = document.querySelector('.sign-box');
+        const overlay = document.querySelector('.overlay');
+        const cross = document.querySelector('.cross');
+
+        function Displaycard(e) {
+            e.preventDefault();
+            overlay.classList.toggle('active');
+            signbox.classList.toggle('active');
+        }
+
+        signup.addEventListener('click', Displaycard);
+        overlay.addEventListener('click', Displaycard);
+        cross.addEventListener('click', Displaycard);
+
+        window.addEventListener('DOMContentLoaded', (event) => {
+            let inputs = document.querySelectorAll('.input-container input');
+            inputs.forEach(input => {
+                if (input.value !== "") {
+                    input.classList.add('not-empty');
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>
