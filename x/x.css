@@ -1,0 +1,307 @@
+@import url("https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playwrite+ES:wght@100..400&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "PT Sans";
+  font-style: normal;
+  color: rgb(219, 238, 255);
+}
+
+body {
+  background-color: rgb(0, 0, 0);
+}
+.x {
+  height: 400px;
+}
+.wapper {
+  display: flex;
+  height: 93vh;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+.hero-div1 {
+  height: 100vh;
+  border: 2px solid black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60%;
+}
+.hero-div2 {
+  width: 45%;
+  /* padding: 10px; */
+}
+.hero-link {
+  width: 340px;
+}
+.separator {
+  display: flex;
+  align-items: center;
+  /* width: 100%; */
+}
+.separator hr {
+  flex-grow: 1;
+  border: none;
+  border-top: 1px solid rgb(255, 255, 255);
+  margin: 0 10px;
+}
+.separator p {
+  margin: 0;
+  padding: 0 10px;
+}
+.hero-main h1 {
+  transform: scaleX(1.4);
+  font-size: 60px;
+  font-weight: 900;
+  padding-left: 70px;
+  padding-top: 150px;
+  padding-bottom: 40px;
+  width: 500px;
+
+
+}
+
+.hero-join {
+  border: 2px solid black;
+  width: 400px;
+  height: 500px;
+  /* padding: 30px; */
+}
+
+.hero-join h2 {
+  font-size: 35px;
+  margin-bottom: 30px;
+}
+
+.hero-join a {
+  color: rgb(0, 0, 0);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  background-color: #fff;
+  width: 300px;
+  border: 2px solid black;
+  border-radius: 50px;
+  margin: 10px 0;
+  padding: 12px;
+  height: 35px;
+}
+a h4 {
+  text-decoration: none;
+  color: black;
+}
+
+.hero-join a img {
+  height: 20px;
+  margin-right: 10px;
+}
+
+.hero-link {
+  border: 2px solid black;
+  display: flex;
+  display: flex;
+  flex-basis: auto;
+  flex-direction: column;
+  flex-shrink: 0;
+  width: 310px;
+  /* justify-content:baseline;
+    flex-direction: column; */
+}
+.mimi-trems {
+  font-size: smaller;
+  color: grey;
+  /* margin-bottom: 80px; */
+}
+
+span {
+  color: rgb(29, 155, 240);
+}
+
+.foot {
+  text-align: center;
+  margin: 10px 0;
+}
+
+.foot a {
+  /* padding: 0 10px; */
+  margin: 0 10px;
+  text-decoration: none;
+  color: gray;
+  font-size: 14px;
+}
+
+.signup {
+  margin-top: 40px;
+}
+a h3 {
+  color: rgb(29, 155, 240);
+}
+.signup a {
+  background-color: rgba(255, 0, 0, 0);
+  border: 2px solid rgb(29, 155, 240);
+  transition: background-color 0.5s ease;
+}
+
+.signup a:hover {
+  background-color: rgba(24, 130, 200, 0.3);
+}
+.sign-box {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  translate: -50% -50%;
+  width: 550px;
+  height: 650px;
+  scale: 0;
+  background: #000000;
+  color: white;
+  z-index: 1;
+  padding: 20px 25px;
+  border-radius: 20px;
+  padding: 20px;
+}
+.sign-box,
+.hero-join2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.sign-box img {
+  height: 40px;
+}
+div.x2{
+    width: 100%;
+    display: grid;
+    place-items: center;
+}
+.click-con {
+  border: 2px solid grey;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0;
+}
+.input-container {
+  position: relative;
+  margin-top: 20px;
+}
+
+.input-container input {
+  width: 300px;
+  background-color: rgba(0, 0, 0, 0);
+  border-radius: 5px;
+  border: 0px solid grey;
+  padding: 10px;
+  font-size: 16px;
+}
+.input-container input:focus {
+  outline: none; /* Removes the default blue outline */
+  border: none;
+  background-color: rgba(245, 222, 179, 0); /* Removes the border on focus */
+}
+
+.input-container label {
+  position: absolute;
+  /* top: 10px; */
+  left: 10px;
+  font-size: 20px;
+  color: gray;
+  transition: all 0.3s;
+  pointer-events: none; /* Prevent label from being clicked */
+}
+
+.input-container input:focus + label,
+.input-container input:not(:placeholder-shown) + label {
+  top: -10px;
+  left: 10px;
+  font-size: 13px;
+  color: rgb(29, 155, 240);
+}
+.overlay {
+  position: fixed;
+  background-color: rgba(219, 238, 255, 0.2);
+  top: 0;
+  scale: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  pointer-events: none;
+}
+
+.cross {
+  /* display: grid; */
+  text-align: center;
+  height: 32px;
+  width: 32px;
+  font-size: 25px;
+  position: absolute;
+  left: 30px;
+  top: 30px;
+  border-radius: 50%;
+  transition: 0.3s ease-in-out;
+}
+.cross:hover {
+  background-color: rgba(219, 238, 255, 0.1);
+}
+
+.active {
+  scale: 1;
+}
+
+@media screen and (max-width: 1000px) {
+    
+  .wapper {
+    display: grid;
+    place-items: center;
+    row-gap: 0;
+    height: 93vh;
+    overflow-y:scroll;
+  }
+  .x{
+      height: 50px;
+  }
+  .hero-div1 {
+    padding: 20px 0px  0px 30px ;
+    height: 80px;
+    border: 2px solid black;
+    display: block;
+    align-items: center;
+    justify-content: center;
+    /* width: 60%; */
+  }
+  .hero-main h1 {
+    border: 2px solid black;
+    transform: scaleX(1);
+    font-size: 60px;
+    font-weight: 900;
+    padding-top: 10px;
+    padding-left: 0;
+    padding-bottom: 40px;
+  }
+  
+}
+
+@media screen and (max-width: 500px) {
+    .wapper {
+        display: grid;
+        place-items:none;
+        /* row-gap: 0; */
+        padding: 30px;
+        height: 93vh;
+        overflow-y:scroll;
+      }
+    .hero-main h1 {
+        border: 2px solid black;
+        transform: scaleX(1);
+        font-size: 40px;
+        font-weight: 900;
+        padding-top: 0px;
+        padding-left: 0;
+        padding-bottom: 0px;
+      }
+}
