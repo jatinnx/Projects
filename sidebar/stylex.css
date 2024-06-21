@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Poppins:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.mainbox {
+    background: url("anipic.png");
+    background-size: cover;
+    height: 100vh;
+}
+
+.sidebar {
+    /* border: 1px solid black; */
+    /* display: inline; */
+    width: 190px;
+    height: 99vh;
+    border-radius: 0 10px 0 0;
+    background-color: #6a5b5b67;
+    box-shadow: 0 0 7px whitesmoke;
+    position: relative;
+    left: -196px;
+    
+    transition: 0.6s;
+}
+
+.head {
+    font-size: larger;
+    color: aliceblue;
+    text-align: center;
+    position: relative;
+    border-top: 1px solid whitesmoke;
+    border-bottom: 1px solid whitesmoke;
+    background-color: #4e484867;
+    box-shadow: 0 0 7px rgb(241, 183, 183);
+    line-height: 50px;
+}
+
+.midcon {
+    padding: 15px;
+    padding-top: 15px;
+    padding-bottom: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    transition: 0.3s;
+
+
+}
+
+.midcon:hover {
+    box-shadow: 0 0 7px rgb(0, 0, 0);
+}
+
+.mid {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    text-shadow: 0 0 10px wheat;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.midcon a {
+    text-decoration: none;
+    font-weight: bold;
+    position: absolute;
+    left: 50px;
+    color: rgb(0, 0, 0);
+}
+
+#bone {
+    font-size: 30px;
+    font-weight: bold;
+    position: absolute;
+    left: 26px;
+    top: 0;
+    margin: 0;
+}
+
+
+
+#foot {
+    position: absolute;
+    top: 94vh;
+    left: 20px;
+}
+
+#foot i {
+    font-size: 15px;
+    color: aliceblue;
+    opacity: 0.6;
+    padding-left: 10px;
+    transition: 0.001s;
+}
+
+#checkbox {
+    display: none;
+}
+
+#foot i:hover {
+    color: white;
+    opacity: 1;
+    padding-left: 7px;
+    font-size: large;
+
+}
+#checkbox:checked ~ .sidebar {
+  left: 0;
+}
+
+#checkbox:checked ~ .dif{
+  display: none;
+}
