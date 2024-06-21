@@ -1,0 +1,263 @@
+* {
+    margin: 0;
+    color: aliceblue;
+}
+
+body {
+    background-color: black;
+    margin: 0;
+}
+
+.mainq {
+    display: flex;
+    height: 100vh;
+}
+
+.sidebar {
+    width: ;
+    width: 23.5rem;
+}
+
+.navq {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0.313rem;
+    padding: 0.5rem 0.75rem;
+    width: 22.5rem;
+    height: 8.3rem;
+    border-radius: 10px;
+    background-color: #121212;
+}
+
+.navop {
+    line-height: 2.3rem;
+}
+
+.navop a {
+    display: flex;
+    text-decoration: none;
+
+}
+
+.navop a i {
+    padding-top: 10px;
+    font-size: 20px;
+}
+
+.name {
+    font-size: large;
+    margin-left: 20px;
+}
+
+.spotify {
+    font-size: x-large;
+    font-weight: bold;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.q {
+    opacity: 0.6;
+    transition: 0.5s;
+}
+
+.q:hover {
+    opacity: 1;
+}
+
+.maincontent {
+    background-color: #121212;
+    flex: 1;
+}
+
+.musicplayer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: blue;
+}
+
+.div1 {
+    margin: 0.313rem;
+    /* padding: 0.5rem 0.75rem; */
+    width: 22.5rem;
+
+    border-radius: 10px;
+    background-color: #121212;
+}
+
+.min {
+    overflow: auto;
+    padding: 8px;
+}
+.div2 {
+    padding: 10px;
+    /* margin: 6px; */
+    height: 160px;
+    border-radius: 10px;
+    background-color: #232323;
+    padding-bottom: 15px;
+}
+.op {
+    display: flex;
+}
+.op p {
+    margin: 0 0 0 10px;
+    /* width: 12.5rem; */
+    font-size: large;
+
+}
+.op i {
+    margin-top: 6px;
+}
+.opq {
+    display: flex;
+    padding: 1rem 0.5rem;
+}
+.opq>i {
+    margin-top: 0px;
+    right: 10px;
+    width: 25px;
+    height: 25px;
+    display: block;
+    display: grid;
+    place-content: center;
+    opacity: 0.5;
+    transition: 0.3s;
+    border-radius: 1000%;
+}
+.opq>i:hover {
+    opacity: 1;
+    border-radius: 100%;
+    background-color: rgba(240, 248, 255, 0.100);
+}
+.badge {
+    font-weight: 700;
+    color: black;
+    border: 0;
+    font-size: ;
+    border-radius: 100px;
+    padding: 0.27rem 1rem;
+
+}
+.musicard {
+    background-color: rgba(58, 58, 58, 0.469);
+    /* height: 250px; */
+    max-height: 300px;
+    border-radius: 10px;
+    max-width: 200px;
+    /* width: 150px; */
+    margin: 10px;
+    padding: 10px;
+    transition: 0.3s;
+
+}
+.card {
+    background-color: #ffffff00;
+    border: 0;
+
+}
+img {
+    border-radius: 10px;
+    overflow: hidden;
+}
+.top {
+    margin: 8px;
+    padding: 0.5rem 0.75rem;
+    display: flex;
+    /* position: fixed; */
+
+}
+.noption {
+    position: absolute;
+    right: 20px;
+    display: flex;
+}
+.arrow {
+    display: flex;
+}
+.arrow i {
+    display: grid;
+    place-content: center;
+    width: 32px;
+    height: 32px;
+    padding: 10px;
+    border-radius: 100px;
+    background-color: black;
+}
+.grid1 {
+    display: flex;
+}
+.badge {
+    font-size: 1rem;
+}
+.badge:hover {
+    text-align: center;
+    font-size: 1.07rem;
+}
+.sell button {
+    margin: 7px 0 3 0px;
+}
+.sellicon i {
+    margin: 12px 13px 8px 13px;
+    font-size: 1rem;
+}
+.sell {
+    display: flex;
+}
+div.qw {
+    display: grid;
+    place-content: center;
+    width: 168px;
+}
+.sell div {
+    display: grid;
+    place-content: center;
+    width: 168px;
+}
+div.headline {
+    margin: 5px 0 8px 15px;
+    padding: 5px 0 8px 17px;
+}
+.headline h2{
+    font-family:'Times New Roman', Times, serif;
+    margin: 0;
+}
+.grid1{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    /* column-gap: 10px; */
+}
+.maincontent{
+    overflow: auto;
+    scroll-behavior: proximity;
+}
+.opq{
+    padding-bottom: 0;
+}
+.srch{
+    width: 300px; 
+}
+.card-info{
+    font-size: small;
+}
+.musicard:hover{
+    background-color: #ffffff3e;
+}
+.musicplayer{
+    display: flex;
+    height: 60px;
+    background-color: black;
+}
+.maincontent{
+    /* margin: 1px; */
+    margin: 5px;
+    border-radius: 10px;
+}
+.mainq{
+    padding: 8px;
+    display: grid;
+    grid-template-rows: 1fr auto;
+    grid-template-columns: auto 1fr;
+}
