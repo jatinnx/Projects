@@ -1,0 +1,403 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+@import url("https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playwrite+ES:wght@100..400&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "PT Sans";
+  font-style: normal;
+  color: rgb(219, 238, 255);
+}
+
+body {
+  background-color: rgb(0, 0, 0);
+}
+
+.x {
+  height: 400px;
+}
+
+.wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 92vh;
+  overflow: hidden;
+}
+
+.hero-div1 {
+  height: 50vh;
+  border: 2px solid black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60%;
+}
+
+.hero-sec {
+  width: 45%;
+  padding: 0 0 100px 0;
+}
+
+.separator {
+  display: flex;
+  align-items: center;
+}
+
+.separator hr {
+  flex-grow: 1;
+  border: none;
+  border-top: 1px solid rgb(255, 255, 255);
+  margin: 0 10px;
+}
+
+.separator p {
+  margin: 0;
+  padding: 0 10px;
+}
+
+.hero-form h1 {
+  transform: scaleX(1.4);
+  font-size: 60px;
+  font-weight: 900;
+  padding-left: 70px;
+  padding-top: 150px;
+  padding-bottom: 40px;
+  width: 500px;
+}
+
+.headline-below {
+  font-size: 40px;
+  margin-bottom: 30px;
+}
+
+button {
+  color: rgb(0, 0, 0);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  background-color: #fff;
+  width: 300px;
+  border: 2px solid black;
+  border-radius: 50px;
+  margin: 10px 0;
+  padding: 12px;
+  height: 35px;
+  cursor: pointer;
+}
+
+button h4 {
+  text-decoration: none;
+  color: black;
+}
+
+button img {
+  height: 20px;
+  margin-right: 10px;
+}
+
+.hero-link {
+  display: flex;
+  flex-basis: auto;
+  flex-direction: column;
+  flex-shrink: 0;
+  width: 340px;
+}
+
+.mimi-terms {
+  font-size: smaller;
+  color: grey;
+}
+
+span {
+  color: rgb(29, 155, 240);
+}
+
+.foot {
+  text-align: center;
+  margin: 10px 0;
+}
+
+.foot a {
+  margin: 0 10px;
+  text-decoration: none;
+  color: gray;
+  font-size: 14px;
+}
+
+.signup {
+  margin-top: 40px;
+}
+
+.signup button {
+  background-color: rgba(255, 0, 0, 0);
+  border: 2px solid rgb(29, 155, 240);
+  transition: background-color 0.5s ease;
+}
+
+.signup button h4 {
+  color: rgb(29, 155, 240);
+  font-size: large;
+}
+
+.signup button:hover {
+  background-color: rgba(24, 130, 200, 0.3);
+}
+
+.sign-box {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  translate: -50% -50%;
+  width: 550px;
+  height: 650px;
+  background: #000000;
+  color: white;
+  z-index: 1;
+  padding: 20px 25px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.sign-box img {
+  height: 40px;
+}
+
+div.x2 {
+  width: 100%;
+  display: grid;
+  place-items: center;
+  padding-bottom: 36px;
+}
+
+.inputbox {
+  border: 2px solid grey;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0;
+}
+
+.userinput {
+  position: relative;
+  margin-top: 20px;
+}
+
+.userinput input {
+  width: 300px;
+  background-color: rgba(0, 0, 0, 0);
+  border-radius: 5px;
+  border: 0px solid grey;
+  padding: 10px;
+  font-size: 18px;
+}
+
+.userinput input:focus {
+  outline: none;
+  border: none;
+  background-color: rgba(245, 222, 179, 0);
+}
+
+.userinput label {
+  position: absolute;
+  top: -3px;
+  left: 10px;
+  font-size: 20px;
+  color: gray;
+  transition: all 0.3s;
+  pointer-events: none;
+}
+
+.userinput input:focus + label,
+.userinput input:not(:placeholder-shown) + label {
+  top: -12px;
+  left: 10px;
+  font-size: 13px;
+  color: rgb(29, 155, 240);
+}
+
+.overlay {
+  position: fixed;
+  background-color: rgba(219, 238, 255, 0.2);
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  cursor: pointer;
+}
+
+.cross {
+  text-align: center;
+  height: 32px;
+  width: 32px;
+  font-size: 25px;
+  position: absolute;
+  left: 30px;
+  top: 30px;
+  border-radius: 50%;
+  transition: 0.3s ease-in-out;
+}
+
+.cross:hover {
+  background-color: rgba(219, 238, 255, 0.1);
+}
+
+.cross .cross-img {
+  height: 32px;
+  width: 32px;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+}
+
+@media screen and (max-width: 1000px) {
+  .wrapper {
+    display: grid;
+    place-items: center;
+    row-gap: 0;
+    height: 93vh;
+    overflow-y: scroll;
+  }
+
+  .x {
+    height: 50px;
+  }
+
+  .hero-div1 {
+    padding: 20px 0px 0px 30px;
+    height: 80px;
+    border: 2px solid black;
+    display: block;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .hero-form h1 {
+    border: 2px solid black;
+    transform: scaleX(1);
+    font-size: 60px;
+    font-weight: 900;
+    padding-top: 10px;
+    padding-left: 0;
+    padding-bottom: 40px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .wrapper {
+    display: grid;
+    place-items: none;
+    padding: 30px;
+    height: 93vh;
+    overflow-y: scroll;
+  }
+
+  .hero-main h1 {
+    border: 2px solid black;
+    transform: scaleX(1);
+    font-size: 40px;
+    font-weight: 900;
+    padding-top: 0px;
+    padding-left: 0;
+    padding-bottom: 0px;
+  }
+}
+
+.hero-join2 {
+  overflow: hidden;
+  transform: scaleX(1);
+  transform-origin: left;
+  transition: 0.1s;
+}
+
+.middle {
+  width: 400px;
+  height: 450px;
+  position: absolute;
+  background-color: rgb(0, 0, 0);
+  top: 50%;
+  left: 50%;
+  translate: -50% -50%;
+  right: 0;
+  bottom: 0px;
+  z-index: 3;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: 0.1s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mid-div::after {
+  content: "";
+  width: 20px;
+  height: 20px;
+  border: 6px solid #dddddd;
+  border-top-color: rgb(29, 155, 240);
+  border-radius: 50%;
+  animation: loading 0.4s linear infinite;
+}
+
+@keyframes loading {
+  from {
+    transform: rotate(0turn);
+  }
+  to {
+    transform: rotate(1turn);
+  }
+}
+
+#wait2 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  translate: -50% -50%;
+}
+
+#wait2 a {
+  font-size: medium;
+  width: fit-content;
+  background-color: rgba(255, 255, 255, 0);
+  color: rgb(29, 155, 240);
+  padding: 0;
+  margin: 0 0 0 0;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+#Login-btn {
+  width: 100%;
+  background-color: grey;
+  height: 50px;
+  border-radius: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px;
+  margin-top: 190px;
+  font-size: 22px;
+  font-weight: 780;
+  color: #000000;
+  cursor: pointer;
+}
